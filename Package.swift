@@ -22,22 +22,29 @@ let package = Package(
   products: [
     .library(
       name: "LineAdapterTarget",
-      targets: ["LineAdapterTarget"]
+      targets: ["LineAdapterTarget", "LineSDK"]
     )
   ],
   targets: [
     .target(
       name: "LineAdapterTarget",
       dependencies: [
-        .target(name: "Adapter")
+        .target(name: "LineAdapter"),
+        .target(name: "LineSDK"),
       ],
       path: "LineAdapterTarget"
     ),
     .binaryTarget(
-      name: "Adapter",
+      name: "LineAdapter",
       url:
-        "https://dl.google.com/googleadmobadssdk/mediation/ios/line/LineAdapter-2.9.20250512.0.zip",
-      checksum: ""
+        "https://dl.google.com/googleadmobadssdk/mediation/ios/line/LineAdapter-2.9.20251119.0.zip",
+      checksum: "afe9e02fae4e28112c8a9f02885831a11106774d1e5bd1ab7524b3710f762eea"
+    ),
+    .binaryTarget(
+      name: "LineSDK",
+      url:
+        "https://cdn.fivecdm.com/release-sdk/ios/20251119/FiveAd.framework-20251119.zip",
+      checksum: "0d26ba167eea21f64fc7a1a1b4ee8d24fb2228835c3ea0a8074693eee89590e0"
     ),
   ]
 )
