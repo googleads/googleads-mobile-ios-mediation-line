@@ -25,12 +25,19 @@ let package = Package(
       targets: ["LineAdapterTarget", "LineSDK"]
     )
   ],
+  dependencies: [
+    .package(
+      url: "https://github.com/googleads/swift-package-manager-google-mobile-ads.git",
+      from: "12.0.0"
+    )
+  ],
   targets: [
     .target(
       name: "LineAdapterTarget",
       dependencies: [
         .target(name: "LineAdapter"),
         .target(name: "LineSDK"),
+        .product(name: "GoogleMobileAds", package: "swift-package-manager-google-mobile-ads"),
       ],
       path: "LineAdapterTarget"
     ),
