@@ -44,13 +44,13 @@ let package = Package(
     .binaryTarget(
       name: "LineAdapter",
       url:
-        "https://dl.google.com/googleadmobadssdk/mediation/ios/line/LineAdapter-3.0.0.1.zip",
+        "https://dl.google.com/googleadmobadssdk/mediation/ios/line/LineAdapter-3.0.1.0.zip",
       checksum: "3e86d04e8cec5f0472818012fc8f5bb0ccaa4d4b1f2290fd7c5bf1d5e0c72f39"
     ),
     .binaryTarget(
       name: "LineSDK",
       url:
-        "https://cdn.fivecdm.com/release-sdk/ios/v3.0.0/FiveAd.framework.zip",
+        "https://cdn.fivecdm.com/release-sdk/ios/v3.0.1/FiveAd.framework.zip",
       checksum: "1d0ca55a377fd6dab304e658f48c2c72d7d620ca38cae4c4a7d8cc3ff0febc8a"
     ),
   ]
