@@ -1,4 +1,4 @@
-// swift-tools-version:5.3
+// swift-tools-version:5.6
 
 // Copyright 2025 Google LLC.
 //
@@ -22,21 +22,25 @@ let package = Package(
   products: [
     .library(
       name: "LineAdapterTarget",
-      targets: ["LineAdapterTarget", "LineSDK"]
+      targets: ["LineAdapterTarget"]
     )
   ],
   dependencies: [
     .package(
+      url: "https://github.com/ly-ads-network/swift-package-manager-fivead.git",
+      exact: "3.0.1"
+    ),
+    .package(
       url: "https://github.com/googleads/swift-package-manager-google-mobile-ads.git",
       from: "13.0.0"
-    )
+    ),
   ],
   targets: [
     .target(
       name: "LineAdapterTarget",
       dependencies: [
         .target(name: "LineAdapter"),
-        .target(name: "LineSDK"),
+        .product(name: "FiveAd", package: "swift-package-manager-fivead"),
         .product(name: "GoogleMobileAds", package: "swift-package-manager-google-mobile-ads"),
       ],
       path: "LineAdapterTarget"
@@ -46,12 +50,6 @@ let package = Package(
       url:
         "https://dl.google.com/googleadmobadssdk/mediation/ios/line/LineAdapter-3.0.1.0.zip",
       checksum: "0450d5e3d38a84e278cca80cfa27b6d22ce914a77e6aa2033229b34533728529"
-    ),
-    .binaryTarget(
-      name: "LineSDK",
-      url:
-        "https://cdn.fivecdm.com/release-sdk/ios/v3.0.1/FiveAd.framework.zip",
-      checksum: "62fc94398a97de61359178fafaf5eec4f1df566a01d65aab9b4a8d0c0b493619"
     ),
   ]
 )
