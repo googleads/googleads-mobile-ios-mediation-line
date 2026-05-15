@@ -48,7 +48,7 @@ let package = Package(
     .binaryTarget(
       name: "LineAdapter",
       url:
-        "https://dl.google.com/googleadmobadssdk/mediation/ios/line/LineAdapter-3.0.1.0.zip",
+        "https://dl.google.com/googleadmobadssdk/mediation/ios/line/LineAdapter-3.0.1.1.zip",
       checksum: "0450d5e3d38a84e278cca80cfa27b6d22ce914a77e6aa2033229b34533728529"
     ),
   ]
