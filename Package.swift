@@ -49,7 +49,7 @@ let package = Package(
       name: "LineAdapter",
       url:
         "https://dl.google.com/googleadmobadssdk/mediation/ios/line/LineAdapter-3.0.1.1.zip",
-      checksum: "0450d5e3d38a84e278cca80cfa27b6d22ce914a77e6aa2033229b34533728529"
+      checksum: "e58ca60717973931ea61b5cb1b69e96f3506510bf203ac48b5693dd164c59b10"
     ),
   ]
 )
