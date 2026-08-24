@@ -18,7 +18,7 @@ import PackageDescription
 
 let package = Package(
   name: "LineAdapter",
-  platforms: [.iOS(.v13)],
+  platforms: [.iOS(.v15)],
   products: [
     .library(
       name: "LineAdapterTarget",
@@ -28,7 +28,7 @@ let package = Package(
   dependencies: [
     .package(
       url: "https://github.com/ly-ads-network/swift-package-manager-fivead.git",
-      exact: "3.0.1"
+      exact: "3.1.0"
     ),
     .package(
       url: "https://github.com/googleads/swift-package-manager-google-mobile-ads.git",
@@ -48,7 +48,7 @@ let package = Package(
     .binaryTarget(
       name: "LineAdapter",
       url:
-        "https://dl.google.com/googleadmobadssdk/mediation/ios/line/LineAdapter-3.0.1.2.zip",
+        "https://dl.google.com/googleadmobadssdk/mediation/ios/line/LineAdapter-3.1.0.0.zip",
       checksum: "fac54036b05fd1f1206355e90034b42e4574141a13ecd34bc59b50dd0e90ac3c"
     ),
   ]
