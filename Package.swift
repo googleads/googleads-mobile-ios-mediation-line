@@ -28,7 +28,7 @@ let package = Package(
   dependencies: [
     .package(
       url: "https://github.com/ly-ads-network/swift-package-manager-fivead.git",
-      exact: "3.1.1"
+      exact: "3.1.2"
     ),
     .package(
       url: "https://github.com/googleads/swift-package-manager-google-mobile-ads.git",
@@ -48,7 +48,7 @@ let package = Package(
     .binaryTarget(
       name: "LineAdapter",
       url:
-        "https://dl.google.com/googleadmobadssdk/mediation/ios/line/LineAdapter-3.1.1.0.zip",
+        "https://dl.google.com/googleadmobadssdk/mediation/ios/line/LineAdapter-3.1.2.0.zip",
       checksum: "b9d4bc4ebf860d7670ddf0fc0f8c3a22667a6e2a587a1f1c39cee4bf7a634881"
     ),
   ]
